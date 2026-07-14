@@ -1,0 +1,113 @@
+html,
+body{
+
+    margin:0;
+    padding:0;
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+}
+
+body{
+
+    background-image:url("fondo.jpg");
+
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    background-color:black;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* Posición del reloj sobre el círculo del 50 */
+
+#contador{
+
+    position:absolute;
+
+    left:50%;
+
+    top:37%;
+
+    transform:translate(-50%,-50%);
+
+    width:300px;
+
+    text-align:center;
+
+    color:white;
+
+    text-shadow:
+
+        2px 2px 6px black,
+        0px 0px 12px black;
+
+}
+
+#dias{
+
+    font-size:72px;
+
+    font-weight:bold;
+
+    line-height:70px;
+
+    font-family:"Courier New",monospace;
+
+}
+
+.textoDias{
+
+    font-size:18px;
+
+    letter-spacing:5px;
+
+    margin-bottom:12px;
+
+}
+
+#hora{
+
+    font-size:42px;
+
+    font-family:"Courier New",monospace;
+
+    font-weight:bold;
+
+}
+
+@media(max-width:900px){
+
+#contador{
+
+    width:220px;
+
+    top:37%;
+
+}
+
+#dias{
+
+    font-size:48px;
+
+}
+
+.textoDias{
+
+    font-size:14px;
+
+}
+
+#hora{
+
+    font-size:28px;
+
+}
+
+}
